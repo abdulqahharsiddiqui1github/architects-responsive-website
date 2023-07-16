@@ -1,11 +1,27 @@
 *{
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 /* common code here */
-
-
-
-
+.btn-primary{
+    border-radius: 5px;
+    background-color: #FF900E;
+    padding: 20px 25px;
+    color: #ffff;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.span-feature{
+    color: tomato;
+}
+.span-quick-list{
+    color: gray;
+}
+/* common code end here */
 
 /* header styles starts here */
 header{
@@ -50,125 +66,67 @@ img{
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
+    text-align: center;
 }
 .banner-description{
     color: #727272;
 }
-
-
-
-
-
-
-
-
-
-
-
-/* nav > ul{
-    display: flex;
-}
-nav > ul li{
-    list-style: none;
-    margin-right: 30px;
-    font-size: 1rem;
-    font-weight: 500;
-}
-nav > ul li a{
-    text-decoration: none;
-    color: #424242;
-}
-.nav-title{
-    font-size: 3.8rem;
-    font-weight: 700;
-} */
-/* header styles ends here */
-
-/* banner content starts from here */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .banner-content{
-    width: 862px;
-    margin: 10px auto;
-    text-align: center;
-    color:#131313;
-    font-size: 1rem;
-    font-weight: 400;
-}
-img{
+.banner img{
     width: 100%;
 }
-.btn{
-    width: 180px;
-    height: 64px;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    background: #FF900E;
-    border: none;
-    font-weight: 600;
-    color: #FFF;
-    text-align: center;
-} */
+/* feature section style starts from here */
+.features{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 50px;
+    margin: 200px 100px;
+}
+.feature-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+/* feature section style end here */
 
-/* banner content end here */
 
 
 
-
-/* meadia quairy small divaice */
+/* small divaice */
 @media screen and (max-width: 576px) {
+    header {
+        padding: 10px;
+    }
+    nav, ul{
+        flex-direction: column;
+        padding-left: 50px;
+    }
+    nav > ul > li{
+        margin-top: 20px;
+    }
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        margin: 200px 10px;
+    }
+    .feature-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    /* nav{
+/* medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav{
         flex-direction: column;
     }
-    nav > ul{
-        flex-direction: column;
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 200px 50px;
     }
-    nav > ul li{
-        margin-top: 30px;
+    nav > ul > li{
+        margin-top: 20px;
     }
-    .banner-content{
-        width: 100%;
+    ul{
+        padding-left: 50px;
     }
-    header{
-        background: rgba(214, 115, 2, 0.1);
-        padding: 20px;
-    } */
 }
