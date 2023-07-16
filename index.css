@@ -1,3 +1,174 @@
 *{
     font-family: 'Work Sans', sans-serif;
 }
+/* common code here */
+
+
+
+
+
+/* header styles starts here */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul {
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+    color: #424242;
+}
+.nav-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+
+}
+
+/* banner section style */
+img{
+    width: 100%;
+}
+
+.banner-content{
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-description{
+    color: #727272;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* nav > ul{
+    display: flex;
+}
+nav > ul li{
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+nav > ul li a{
+    text-decoration: none;
+    color: #424242;
+}
+.nav-title{
+    font-size: 3.8rem;
+    font-weight: 700;
+} */
+/* header styles ends here */
+
+/* banner content starts from here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .banner-content{
+    width: 862px;
+    margin: 10px auto;
+    text-align: center;
+    color:#131313;
+    font-size: 1rem;
+    font-weight: 400;
+}
+img{
+    width: 100%;
+}
+.btn{
+    width: 180px;
+    height: 64px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background: #FF900E;
+    border: none;
+    font-weight: 600;
+    color: #FFF;
+    text-align: center;
+} */
+
+/* banner content end here */
+
+
+
+
+/* meadia quairy small divaice */
+@media screen and (max-width: 576px) {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    /* nav{
+        flex-direction: column;
+    }
+    nav > ul{
+        flex-direction: column;
+    }
+    nav > ul li{
+        margin-top: 30px;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    header{
+        background: rgba(214, 115, 2, 0.1);
+        padding: 20px;
+    } */
+}
